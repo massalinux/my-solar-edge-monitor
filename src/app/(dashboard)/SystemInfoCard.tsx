@@ -13,8 +13,10 @@ export async function SystemInfoCard() {
       <CardHeader>
         <div className="flex flex-col justify-between">
           <h1 className="text-2xl font-bold">Info Impianto</h1>
-          {`${systemInfo.lastUpdateTime}`}
-          {`${new Date()}`}
+          <p className="hidden">
+            {`${systemInfo.lastUpdateTime}`}
+            {`${new Date()}`}
+          </p>
           <LastUpdated date={systemInfo.lastUpdateTime} />
         </div>
       </CardHeader>
