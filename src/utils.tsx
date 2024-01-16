@@ -17,7 +17,7 @@ export async function getSystemInfo(): Promise<SystemInfo> {
   const data = await response.json()
 
   return {
-    lastUpdateTime: new Date(data.overview.lastUpdateTime),
+    lastUpdateTime: new Date(data.overview.lastUpdateTime + " GMT+0100"),
     lastYearEnergy: data.overview.lastYearData.energy,
     lastMonthEnergy: data.overview.lastMonthData.energy,
     lastDayEnergy: data.overview.lastDayData.energy,
