@@ -2,7 +2,6 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react"
 import LastUpdated from "@/app/(dashboard)/LastUpdated"
 import { getSystemInfo, isSystemUp } from "@/utils"
 
-export const dynamic = 'force-dynamic'
 
 export async function SystemInfoCard() {
   const systemInfo = await getSystemInfo()
