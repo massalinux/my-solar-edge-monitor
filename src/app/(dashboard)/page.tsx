@@ -1,6 +1,6 @@
 import { SystemInfoCard } from "@/app/(dashboard)/SystemInfoCard"
 
-export const revalidate = 60
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
 
